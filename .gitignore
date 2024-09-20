@@ -1,15 +1,54 @@
+# Java ja Kotlin faili ignoreerimine
+*.class
+*.jar
+*.war
+*.ear
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+
+# Keelatud süsteemi failid
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+.idea/
+.gradle/
 local.properties
+
+# Build-kaustad ja generatsioonid
+/build/
+/app/build/
+
+# Android NDK
+/obj/
+/libs/
+
+# Eclipse projektid (kui kunagi seotud)
+.settings/
+.project
+.classpath
+
+# Android stuudio spetsiifilised failid
+*.log
+*.hprof
+*.orig
+*.swp
+*.lock
+
+# Gradle Wrapper failid
+gradle/wrapper/gradle-wrapper.properties
+gradle/wrapper/gradle-wrapper.jar
+
+# Kataloogid, mis sisaldavad käivitatavaid tulemusi
+*.apk
+*.ap_
+
+# Kotlin build kaust
+/kotlin/**/build/
+
+# Keelatud tööriista konfiguratsioonid
+.vscode/
+*.sublime*
+
+# Android stuudio lokaalsed failid
+.idea/workspace.xml
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+#
