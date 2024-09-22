@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
         // Kontrollime, kas OpenGL ES 3.0 on toetatud
         if (supportsEs3()) {
             // Seadistame OpenGL ES 3.0 renderdamise ja GLSurfaceView-i
+            Log.d("MK001", "Toetab OpenGL ES 3.0");
             glSurfaceView.setEGLContextClientVersion(3);
             glSurfaceView.setRenderer(new GameRenderer(this));
             rendererSet = true;
